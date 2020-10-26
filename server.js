@@ -17,6 +17,6 @@ db.once('open', function() {
 
 const routes = require('./routes/routes.js')(app, fs); 
 //file system is injected to the route for later use, dependency injection.
-const server = app.listen(3001, () => {
+const server = app.listen(process.env.port, () => {
   console.log('listen on port %s...', server.address().port);
 });
