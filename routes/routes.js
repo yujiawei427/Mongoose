@@ -2,7 +2,7 @@ const userRoutes = require('./users');
 
 const appRouter = (app, fs) => {
   app.get('/', (req, res) => {
-    res.send('welcome to the user api');
+    res.send('welcome to the development');
   });
 
    userRoutes(app, fs);
